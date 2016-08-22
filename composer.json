@@ -1,0 +1,16 @@
+{
+  "require": {
+    "codeception/codeception": "*",
+    "codegyre/robo": "*",
+    "codeception/robo-paracept": "@dev"
+  },
+  "scripts": {
+    "test": "composer single && composer local && composer parallel",
+    "single": "vendor/bin/codecept run --env single -g single",
+    "local": "vendor/bin/codecept run --env local -g local",
+    "parallel": "vendor/bin/robo parallel:all"
+  },
+  "autoload": {
+    "classmap": ["lib/"]
+  }
+}
