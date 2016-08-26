@@ -2,6 +2,7 @@
   "require": {
     "codeception/codeception": "*",
     "codegyre/robo": "*",
+    "testingbot/codeception-extension": ">=1.0.0",
     "codeception/robo-paracept": "@dev"
   },
   "scripts": {

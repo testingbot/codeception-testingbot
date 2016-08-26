@@ -1,5 +1,9 @@
 # codeception-testingbot
-[Codeception](http://codeception.com) Integration with TestingBot.
+[Codeception](http://codeception.com) Example with TestingBot.
+
+This example includes `testingbot/codeception-extension`, a CodeCeption Extension, which posts test
+meta-data back to TestingBot. This way, you can see test names, success/fail messages etc in
+the TestingBot dashboard overview.
 
 <img src="http://codeception.com/images/logo.svg" width=130 height=130 />
 
@@ -17,12 +21,16 @@
 ## Notes
 * You can view your test results on the [TestingBot dashboard](https://testingbot.com/members)
 * To test on a different set of browsers, check out our [platform configurator](https://testingbot.com/support/getting-started/browsers.html)
-* You can export the environment variables for the Key and Secret of your TestingBot account
+* You can also export the environment variables for the Key and Secret of your TestingBot account.
   
   ```
   export TB_KEY=<testingbot-key> &&
   export TB_SECRET=<testingbot-secret>
   ```
+
+## Extension
+By default, the [TestingBot CodeCeption extension](https://github.com/testingbot/codeception-extension) is enabled in this example.
+You can see this in the `codeception.yml` file (category extensions)
   
 ## Additional Resources
 * [Documentation for writing Automated test scripts in PHP](https://testingbot.com/support/getting-started/php.html)

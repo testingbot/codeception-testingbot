@@ -13,6 +13,10 @@ extensions:
     enabled:
         - Codeception\Extension\RunFailed
         - Codeception\Extension\TestingBotExtension
+    config:
+        Codeception\Extension\TestingBotExtension:
+            key: "KEY"
+            secret: "SECRET"
 modules:
     config:
         Db:
