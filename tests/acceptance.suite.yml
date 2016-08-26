@@ -27,6 +27,14 @@ env:
         \TestingBotWebDriver:
           capabilities:
             'name': 'single_test'
+  local:
+    modules:
+      config:
+        \TestingBotWebDriver:
+          host: 'localhost'
+          port: 4445
+          capabilities:
+            'name': 'local_test'
 
   parallel_0:
     modules:
@@ -43,6 +51,7 @@ env:
           browser: 'firefox'
           capabilities:
             'name': 'parallel_test'
+            'version': 'latest'
 
   parallel_2:
     modules:
